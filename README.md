@@ -6,6 +6,16 @@ in combination with [guard-sprockets](https://github.com/pferdefleisch/guard-spr
 to have your very own [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html) 
 for projects of any kind. Learn more about [Guard](https://github.com/guard/guard).
 
+How does it work?
+-----------------
+
+You do all your work using, JS, CSS, CoffeeScript, LESS, SASS, etc.. in the `lib` directory. 
+Every time you save a file, Guard will pick up on the change and concatenate the files you've 
+listed in the manifest using Sprockets, Guard will then copy the concatenated file to the `public` directory.
+
+The locations where Guard is listening for changes and outputs the generated file are configurable. This 
+project is simply a template to get you started. Feel free to adapt this to your workflow.
+
 Prerequisites
 -------------
 
